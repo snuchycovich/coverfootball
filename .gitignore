@@ -1,0 +1,10 @@
+docker-compose.override.yaml
+docker-compose.override.yml
+
+/.idea*
+
+# Bash
+/.bash_history
+
+# Local vue env file
+frontend/.env.local

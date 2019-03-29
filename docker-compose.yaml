@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+    engine:
+        build:
+            context: ./docker
+        ports:
+            - "81:80"
+        volumes:
+          - ./docker/000-default.conf:/etc/apache2/sites-enabled/000-default.conf:ro
+          - .:/var/www/html:rw
+
+    db:
+        image: mariadb:10.4
+        volumes:
+            - db:/var/lib/mysql:rw
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        ports:
+            - "1082:80"
+        links:
+            - db
+
+    mail:
+        image: djfarrelly/maildev
+        expose:
+          - "25"
+        ports:
+          - "1081:80"
+
+volumes:
+    db:
