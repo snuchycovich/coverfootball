@@ -5,7 +5,8 @@ services:
         build:
             context: ./docker
         ports:
-            - "81:80"
+            - "8080:80"
+            - "8081:8080"
         volumes:
           - ./docker/000-default.conf:/etc/apache2/sites-enabled/000-default.conf:ro
           - .:/var/www/html:rw
