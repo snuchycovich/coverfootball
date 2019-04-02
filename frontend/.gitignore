@@ -1,11 +1,8 @@
-### Vuejs ###
-node_modules
 .DS_Store
-docs/_book
-test/
+node_modules
+/dist
 
 # local env files
-.env
 .env.local
 .env.*.local
 

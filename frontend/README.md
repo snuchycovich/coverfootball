@@ -1,4 +1,4 @@
-# coverfootball
+# frontend
 
 ## Project setup
 ```
