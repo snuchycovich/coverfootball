@@ -5,6 +5,4 @@ stof_doctrine_extensions:
     orm:
       default:
         sluggable: true
-        timestampable: false
-        other:
-          timestampable: true
+        timestampable: true
