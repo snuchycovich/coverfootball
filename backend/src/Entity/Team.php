@@ -28,7 +28,7 @@ class Team
     private $location;
 
     /**
-     * @Gedmo\Slug(fields={"name","location"})
+     * @Gedmo\Slug(fields={"location", "name"})
      * @ORM\Column(length=128, unique=true)
      */
     private $slug;
