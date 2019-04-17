@@ -28,15 +28,21 @@ doctrine:
                 prefix: 'App\Entity'
                 alias: App
 
-#            gedmo_sluggable:
-#                type: annotation
-#                prefix: Gedmo\Sluggable\Entity
-#                dir: '%kernel.root_dir%/vendor/gedmo/doctrine-extensions/lib/Gedmo/Sluggable'
-#                alias: GedmoSluggable
-#                is_bundle: false
-#            gedmo_timestampable:
-#                type: annotation
-#                prefix: Gedmo\Timestampable\Entity
-#                dir: '%kernel.root_dir%/vendor/gedmo/doctrine-extensions/lib/Gedmo/Timestampable'
-#                alias: GedmoTimestampable
-#                is_bundle: false
+            gedmo_sluggable:
+                type: annotation
+                prefix: Gedmo\Sluggable\Entity
+                dir: '%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Sluggable'
+                alias: GedmoSluggable
+                is_bundle: false
+            gedmo_timestampable:
+                type: annotation
+                prefix: Gedmo\Timestampable\Entity
+                dir: '%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Timestampable'
+                alias: GedmoTimestampable
+                is_bundle: false
+            gedmo_blameable:
+                type: annotation
+                prefix: Gedmo\Blameable\Entity
+                dir: '%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Blameable'
+                alias: GedmoBlameable
+                is_bundle: false
